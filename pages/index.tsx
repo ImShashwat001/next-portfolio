@@ -10,7 +10,6 @@ export default function Home() {
       <Head>
         <title>My Portfolio </title>  
       </Head>
-      <h2 className='text-red-500'>Let's build.</h2>
     </>
   )
 }
