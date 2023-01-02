@@ -5,7 +5,7 @@ type Props = {}
 
 export default function({}: Props) {
   return (
-    <header>
+    <header className='sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
  
     <div className='flex flex-row items-center'>
     <SocialIcon url="https://www.youtube.com/sonnysangha"
@@ -21,7 +21,7 @@ export default function({}: Props) {
     bgColor='transparent'
     />
     </div>
-    <div>
+    <div className='flex flex-row items-center text-gray-300 cursor-pointer'>
       <SocialIcon
         className="cursor-pointer"
         network="email"
