@@ -14,7 +14,7 @@ export default function Home() {
         <title>My Portfolio </title>  
       </Head>
       <Header />
-      <section id='hero' className='snap-center'>
+      <section id='hero' className='snap-start'>
         <Hero />
       </section>
 
