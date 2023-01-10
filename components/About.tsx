@@ -14,15 +14,27 @@ function About({}: Props) {
       <motion.div
         initial={{
           x: -200,
+          opacity: 0,
+        }}
+        transition={{
+          duration: 1.2,
         }}
         whileInView={{
           x: 0,
+          opacity: 1,
         }}
         viewport={{ once: true }}
       >
-        <Image src={ProImg} alt="about image" />
+        <Image src={ProImg} alt="about image"
+          className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
+        />
         </motion.div>
+        <div className='space-y-10 px-0 md:px-10'>
+          <h4 className='text-4xl font-semibold'>Here is a <span className='underline decoration-[#F7AB0A/50]'>little</span> background</h4>
+          <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vel accusamus repudiandae quas nulla, ipsam neque beatae officiis accusantium ducimus omnis eos facilis, porro odio inventore. Voluptas nostrum dolores maxime.</p>
+        </div>
       </div>
+
   )
 }
 
