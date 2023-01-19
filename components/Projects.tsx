@@ -23,7 +23,7 @@ function Projects({}: Props) {
             
             <motion.div
               initial={{
-                y: -300,
+                y: 300,
                 opacity: 0
               }}
               transition={{ duration: 1.2 }}
